@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+body {
+	font-size: 12px;
+	font-family: Times, Georgia, sans-serif;
+	background-color: white;
+}
+
+#left, #right, nav {
+	display: none !important;
+}
+
+#PageAccueil, #Page02, #Page03 {
+	background-color: white;
+}
+
+header, footer {
+	font-style: italic;
+	clear: both;
+	color: white;
+	font-size: 12px;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+#content {
+	display: block;
+}
+
+h1, h2 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	text-shadow: none;
+	color: black;
+}
+h1 {
+	text-align: center;
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 1.5em;
+	clear: both;
+}
+
+a, a:visited  {
+	color: black !important;
+}
+
+img.droite, img.gauche {
+	float: none;
+	display: block;
+	clear: both;
+	filter: grayscale(100%);
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	max-height: 100%;
+	box-shadow: none;
+	page-break-before:auto;
+}
+
