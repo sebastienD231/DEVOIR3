@@ -24,6 +24,26 @@ header, footer {
 	text-align: center;
 }
 
+.menu-icon {
+	display: block;
+	font-size: 2em;
+	padding: 10px;
+	cursor: pointer;
+	color: white;
+	background-color: #0080c0;
+	border-radius: 5px;
+	margin: 10px;
+	width: fit-content;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .menu-icon + ul {
+	display: flex;
+}
+
 nav {
 	text-align: left;
 	position: relative;
@@ -32,6 +52,7 @@ nav {
 nav ul {
 	display: none;
 	flex-direction: column;
+	align-items: flex-start;
 	padding: 10px;
 }
 
@@ -114,62 +135,54 @@ img.gauche {
 }
 
 /* Version pour écrans plus larges */
+
 @media screen and (min-width: 768px) {
-	body {
-		margin: 15px;
-		font-size: 12px;
-	}
 
-	header, footer {
-		height: 40px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+body {
+	margin: 15px;
+	font-size: 12px;
+}
+header, footer {
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu-icon {
+	display: none;
+}
+nav {
+	text-align: center;
+}
+nav ul {
+	display: flex !important;
+	flex-direction: row;
+	justify-content: center;
+}
+nav ul li {
+	margin: 0 15px;
+}
+nav ul li a {
+	font-size: 1.8em;
+}
+#content {
+	display: flex;
+	align-items: stretch;
+}
+#left, #right {
+	display: block;
+	flex: 0 0 10%;
 	}
-
-	nav {
-		text-align: center;
-	}
-
-	nav ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		padding-top: 5px;
-		padding-bottom: 5px;
-	}
-
-	nav ul li {
-		display: inline-block;
-		margin: 15px;
-	}
-
-	nav ul li a {
-		font-size: 1.8em;
-	}
-
-	#content {
-		display: flex;
-		align-items: stretch;
-	}
-
-	#left, #right {
-		display: block;
-		flex: 0 0 10%;
-	}
-
-	#center {
-		flex: 1;
-		font-size: 1.2em;
-	}
-
-	img.droite {
-		float: right;
-		margin-left: 20px;
-	}
-
-	img.gauche {
-		float: left;
-		margin-right: 20px;
-	}
+#center {
+	flex: 1;
+	font-size: 1.2em;
+}
+img.droite {
+	float: right;
+	margin-left: 20px;
+}
+img.gauche {
+	float: left;
+	margin-right: 20px;
+}
 }
