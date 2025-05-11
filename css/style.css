@@ -139,19 +139,18 @@ img.gauche {
 /* Version intermédiaire (test) */
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
-  #left, #right {
-    display: block;
-    flex: 0 0 5%;
-  }
 
-  #content {
-    display: flex;
-    align-items: stretch;
-  }
-
-  #center {
-    flex: 1;
-  }
+#left, #right {
+	display: block;
+	flex: 0 0 9%;
+}
+#content {
+	display: flex;
+	align-items: stretch;
+}
+#center {
+	flex: 1;
+}
 }
 
 /* Version pour écrans "ordinateur" */
