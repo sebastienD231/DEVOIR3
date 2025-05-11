@@ -62,7 +62,7 @@ nav ul li {
 	margin: 5px 0;
 	padding: 10px;
 	border-radius: 5px;
-	box-shadow: 1px 1px 1px 1px black;
+	box-shadow: 2px 2px 8px #0080c0;
 	transition: background-color 0.2s;
 }
 
@@ -136,7 +136,25 @@ img.gauche {
 	margin: 10px auto;
 }
 
-/* Version pour écrans plus larges */
+/* Version intermédiaire (test) */
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  #left, #right {
+    display: block;
+    flex: 0 0 5%;
+  }
+
+  #content {
+    display: flex;
+    align-items: stretch;
+  }
+
+  #center {
+    flex: 1;
+  }
+}
+
+/* Version pour écrans "ordinateur" */
 
 @media screen and (min-width: 768px) {
 
@@ -145,7 +163,7 @@ body {
 	font-size: 12px;
 }
 header, footer {
-	height: 40px;
+	font-size: 1.25em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
